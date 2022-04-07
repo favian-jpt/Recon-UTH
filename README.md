@@ -14,7 +14,7 @@
 - paramspider 
 - gobuster 
 - nikto 
-- wafw00f.**
+- wafw00f.
 
 # Usage 
 git clone https://github.com/favian-jpt/Recon-UTH.git <br>
