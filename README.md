@@ -9,7 +9,7 @@
 - efndr 
 - dnsenum 
 - subfinder 
-- google dork 
+- userfinder 
 - linkfinder 
 - paramspider 
 - gobuster 
