@@ -29,7 +29,7 @@ if [ "$wh1" = "N" ];
 		apt-get install python3 -y
 		echo
 		sleep 2
-		eprintf "%*s" $COLUMNS |tr " " "="
+		printf "%*s" $COLUMNS |tr " " "="
 		echo "MailFinder Installing..."
 		apt-get install python3-pip
 		pip3 install emailfinder
@@ -42,7 +42,7 @@ if [ "$wh1" = "N" ];
 		sleep 2
 		printf "%*s" $COLUMNS |tr " " "="
 		echo "Wafw00f Installing..."
-		git clone apt-get install wafw00f
+		apt-get install wafw00f
 		echo
 		sleep 2
 		printf "%*s" $COLUMNS |tr " " "="
