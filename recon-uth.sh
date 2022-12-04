@@ -170,6 +170,7 @@ echo -e "\033[1;32mChoose number (CTRL+C to Exit) :
 			clear
 			echo -e "\033[34mUserFinder Running\033[0m"
 			sleep 2
+			cd /opt
 			bash UserFinder.sh
 			sleep 3
             clear
