@@ -19,28 +19,33 @@ if [ "$wh1" = "N" ];
 		echo "System Updating Please Wait..."
 		apt-get update
 		sleep 2
-		echo "------------------------------------------------------------------------------------------------------"
+		printf "%*s" $COLUMNS |tr " " "="
 		echo "Whois Installing..."
 		apt-get install whois
 		echo
 		sleep 2
-		echo "------------------------------------------------------------------------------------------------------"
+		printf "%*s" $COLUMNS |tr " " "="
+		echo "Whois Installing..."
+		apt-get install python3
+		echo
+		sleep 2
+		eprintf "%*s" $COLUMNS |tr " " "="
 		echo "MailFinder Installing..."
 		apt-get install python3-pip
 		pip3 install emailfinder
 		echo
 		sleep 2
-		echo "------------------------------------------------------------------------------------------------------"
+		printf "%*s" $COLUMNS |tr " " "="
 		echo "Dnsenum Installing..."
 		apt-get install dnsenum
 		echo
 		sleep 2
-		echo "------------------------------------------------------------------------------------------------------"
+		printf "%*s" $COLUMNS |tr " " "="
 		echo "Wafw00f Installing..."
 		git clone apt-get install wafw00f
 		echo
 		sleep 2
-		echo "------------------------------------------------------------------------------------------------------"
+		printf "%*s" $COLUMNS |tr " " "="
 		echo "UserFinder Installing..."
 		cd /opt/
 		wget https://raw.githubusercontent.com/mishakorzik/UserFinder/main/UserFinder.sh
@@ -48,12 +53,12 @@ if [ "$wh1" = "N" ];
 		cd /home/$USERNAME
 		echo
 		sleep 2
-		echo "------------------------------------------------------------------------------------------------------"
+		printf "%*s" $COLUMNS |tr " " "="
 		echo "Subfinder Installing..."
 		apt-get install subfinder
 		echo
 		sleep 2
-		echo "------------------------------------------------------------------------------------------------------"
+		printf "%*s" $COLUMNS |tr " " "="
 		echo "ParamSpider Installing..."
 		cd /opt/
 		git clone https://github.com/devanshbatham/ParamSpider.git
@@ -62,7 +67,7 @@ if [ "$wh1" = "N" ];
 		cd /home/$USERNAME
 		echo
 		sleep 2
-		echo "------------------------------------------------------------------------------------------------------"
+		printf "%*s" $COLUMNS |tr " " "="
 		echo "LinkFinder Installing..."
 		cd /opt/
 		git clone https://github.com/GerbenJavado/LinkFinder.git
@@ -70,7 +75,7 @@ if [ "$wh1" = "N" ];
 		cd /home/$USERNAME
 		echo
 		sleep 1
-		echo "------------------------------------------------------------------------------------------------------"
+		printf "%*s" $COLUMNS |tr " " "="
 		echo "Gobuster Installing..."
 		apt-get install gobuster
 		
