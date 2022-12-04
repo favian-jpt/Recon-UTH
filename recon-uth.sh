@@ -25,8 +25,8 @@ if [ "$wh1" = "N" ];
 		echo
 		sleep 2
 		printf "%*s" $COLUMNS |tr " " "="
-		echo "Whois Installing..."
-		apt-get install python3
+		echo "Python3 Installing..."
+		apt-get install python3 -y
 		echo
 		sleep 2
 		eprintf "%*s" $COLUMNS |tr " " "="
