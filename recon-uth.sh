@@ -229,7 +229,7 @@ echo -e "\033[1;32mChoose number (CTRL+C to Exit) :
 			read url3
 			echo -e "\033[34mRunning ParamSpider\033[0m"
 			cd /opt/ParamSpider
-			python paramspider.py -d $url3 
+			python3 paramspider.py -d $url3 
 			sleep 3
             clear
             echo
