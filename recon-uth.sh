@@ -41,11 +41,10 @@ if [ "$wh1" = "N" ];
 		echo
 		sleep 2
 		echo "------------------------------------------------------------------------------------------------------"
-		echo "DorksEye Installing..."
+		echo "UserFinder Installing..."
 		cd /opt/
-		git clone https://github.com/BullsEye0/dorks-eye.git
-		echo "Installing Required Packages..."
-		cd dorks-eye || pip3 install -r requirements.txt
+		https://github.com/mishakorzik/UserFinder.git
+		cd UserFinder && chmod +x UserFinder.sh
 		cd /home/$USERNAME
 		echo
 		sleep 2
@@ -102,7 +101,7 @@ echo -e "\033[1;32mChoose number (CTRL+C to Exit) :
 	[2]-E-Mail Discovery				[7]-Link Detection
 	[3]-Dns Discovery				[8]-Index Discovery
 	[4]-Waf Detection				[9]-Parametre Discovery
-	[5]-Google Dork					[10]-Nikto Scan	
+	[5]-UserFinder					[10]-Nikto Scan	
 
 >>> \033[0m\c"
 	read ch
@@ -169,9 +168,9 @@ echo -e "\033[1;32mChoose number (CTRL+C to Exit) :
 	elif [ "$ch" = "5" ];
 		then
 			clear
-			echo -e "\033[34mDorks Eye Running\033[0m"
+			echo -e "\033[34mUserFinder Running\033[0m"
 			sleep 2
-			cd /opt/dorks-eye && python3 dorks-eye.py
+			./UserFinder.sh
 			sleep 3
             clear
             echo
