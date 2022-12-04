@@ -119,7 +119,7 @@ echo -e "\033[1;32mChoose number (CTRL+C to Exit) :
 			sleep 2
             clear
             echo
-			whois $domain1
+			whois $domain1 > whois.txt
 			echo
 			sleep 3
 			echo -e "\033[31mScan Completed\033[0m"
@@ -134,7 +134,7 @@ echo -e "\033[1;32mChoose number (CTRL+C to Exit) :
 			sleep 2
             clear
             echo
-			emailfinder -d $domain2
+			emailfinder -d $domain2 > email.txt
 			sleep 3
 			echo -e "\033[31mScan Completed\033[0m"
 
@@ -149,7 +149,7 @@ echo -e "\033[1;32mChoose number (CTRL+C to Exit) :
 			sleep 2
             clear
             echo
-			dnsenum --enum $domain3 
+			dnsenum --enum $domain3 -o dns.txt
 			sleep 3
 			echo -e "\033[31mScan Completed\033[0m"
 
@@ -176,10 +176,10 @@ echo -e "\033[1;32mChoose number (CTRL+C to Exit) :
 			echo -e "\033[34mUserFinder Running\033[0m"
 			sleep 2
 			cd /opt
+		clear
+		echo
 			bash UserFinder.sh
 			sleep 3
-            clear
-            echo
 			echo -e "\033[31mScan Completed\033[0m"
 			cd /home/$USERNAME
 
@@ -223,7 +223,7 @@ echo -e "\033[1;32mChoose number (CTRL+C to Exit) :
 			sleep 2
             clear
             echo
-			gobuster dir -u $url2 -w $wlist 
+			gobuster dir -u $url2 -w $wlist -o dir.txt
 			sleep 3
 			echo -e "\033[31mScan Completed\033[0m"
 
@@ -234,10 +234,10 @@ echo -e "\033[1;32mChoose number (CTRL+C to Exit) :
 			read url3
 			echo -e "\033[34mRunning ParamSpider\033[0m"
 			cd /opt/ParamSpider
+		clear
+            	echo
 			python3 paramspider.py -d $url3 
 			sleep 3
-            clear
-            echo
 			echo -e "\033[31mScan Completed\033[0m"
 			cd /home/$USERNAME	
 			
