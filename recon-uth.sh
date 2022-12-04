@@ -44,7 +44,8 @@ if [ "$wh1" = "N" ];
 		echo "UserFinder Installing..."
 		cd /opt/
 		https://github.com/mishakorzik/UserFinder.git
-		cd UserFinder && chmod +x UserFinder.sh
+		cd UserFinder/
+		chmod +x UserFinder.sh
 		cd /home/$USERNAME
 		echo
 		sleep 2
