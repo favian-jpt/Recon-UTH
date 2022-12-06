@@ -24,9 +24,13 @@ if [ "$wh1" = "N" ];
 		apt-get install whois
 		echo
 		sleep 2
-		printf "%*s" $COLUMNS |tr " " "="
+		printf "%*s" $COLUMNS |tr " " "-"
 		echo "Python3 Installing..."
 		apt-get install python3 -y
+		printf "%*s" $COLUMNS |tr " " "-"
+		apt-get install python3-pip -y
+		printf "%*s" $COLUMNS |tr " " "-"
+		pip3 install jsbeautifier
 		echo
 		sleep 2
 		printf "%*s" $COLUMNS |tr " " "="
