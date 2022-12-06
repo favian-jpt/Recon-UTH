@@ -126,7 +126,7 @@ echo -e "\033[1;32mChoose number (CTRL+C to Exit) :
 			sleep 2
             clear
             echo
-			whois $domain1 > whois.txt
+			whois $domain1 > whois.log
 			echo
 			sleep 3
 			echo -e "\033[31mScan Completed\033[0m"
@@ -141,7 +141,7 @@ echo -e "\033[1;32mChoose number (CTRL+C to Exit) :
 			sleep 2
             clear
             echo
-			emailfinder -d $domain2 > email.txt
+			emailfinder -d $domain2 > email.log
 			sleep 3
 			echo -e "\033[31mScan Completed\033[0m"
 
@@ -156,7 +156,7 @@ echo -e "\033[1;32mChoose number (CTRL+C to Exit) :
 			sleep 2
             clear
             echo
-			dnsenum --enum $domain3 -o dns.txt
+			dnsenum --enum $domain3 -o dns.log
 			sleep 3
 			echo -e "\033[31mScan Completed\033[0m"
 
@@ -199,7 +199,7 @@ echo -e "\033[1;32mChoose number (CTRL+C to Exit) :
 			sleep 2
             clear
             echo
-			subfinder -d $domain6 -v -o subdomain.txt
+			subfinder -d $domain6 -v -o subdomain.log
 			sleep 3
 			echo -e "\033[31mScan Completed\033[0m"
 
@@ -230,7 +230,7 @@ echo -e "\033[1;32mChoose number (CTRL+C to Exit) :
 			sleep 2
             clear
             echo
-			gobuster dir -u $url2 -w $wlist -o dir.txt
+			gobuster dir -u $url2 -w $wlist -o dir.log
 			sleep 3
 			echo -e "\033[31mScan Completed\033[0m"
 
