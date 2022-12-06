@@ -27,8 +27,11 @@ if [ "$wh1" = "N" ];
 		printf "%*s" $COLUMNS |tr " " "-"
 		echo "Python3 Installing..."
 		apt-get install python3 -y
+		echo
 		printf "%*s" $COLUMNS |tr " " "-"
+		echo
 		apt-get install python3-pip -y
+		echo
 		printf "%*s" $COLUMNS |tr " " "-"
 		pip3 install jsbeautifier
 		echo
