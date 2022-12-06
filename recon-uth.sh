@@ -152,7 +152,7 @@ echo -e "\033[1;32mChoose number (CTRL+C to Exit) :
 			clear	
 			echo -e "\033[33mEnter Domain : \033[0m\c"
 			read domain3
-			echo -e "\033[34mStarting Subdomain Discovery\033[0m"
+			echo -e "\033[34mStarting DNS Discovery\033[0m"
 			sleep 2
             clear
             echo
