@@ -261,6 +261,7 @@ echo -e "\033[1;32mChoose number (CTRL+C to Exit) :
 			nikto -h $domain0
 			sleep 3
 			echo -e "\033[31mScan Completed\033[0m"
+			echo
 
 	fi
 }
